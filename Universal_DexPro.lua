@@ -75,7 +75,7 @@ Dex.About:WaitForChild("Title").TextSize = 50
 
 Dex.About:WaitForChild("Creator").Font = Enum.Font.GothamSemibold
 Dex.About:WaitForChild("Creator").TextSize = 15
-Dex.About:WaitForChild("Creator").Text = "Created by Moon, Edited by LeRak, ic3"
+Dex.About:WaitForChild("Creator").Text = "Created by Moon, Remake by Nixy, Ic3"
 
 Dex.About:WaitForChild("Version").Font = Enum.Font.Gotham
 Dex.About:WaitForChild("Version").TextSize = 17
@@ -93,7 +93,7 @@ Dex.IntroFrame:WaitForChild("Title").TextSize = 50
 
 Dex.IntroFrame:WaitForChild("Creator").Font = Enum.Font.GothamSemibold
 Dex.IntroFrame:WaitForChild("Creator").TextSize = 15
-Dex.IntroFrame:WaitForChild("Creator").Text = "Created by Moon, Edited by LeRak, ic3"
+Dex.IntroFrame:WaitForChild("Creator").Text = "Created by Moon, Remake by Nixy, Ic3"
 
 Dex.IntroFrame:WaitForChild("Version").Font = Enum.Font.Gotham
 Dex.IntroFrame:WaitForChild("Version").TextSize = 17
