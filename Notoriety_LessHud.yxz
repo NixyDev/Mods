@@ -11,6 +11,8 @@ local SG_Package = PlayerGui:WaitForChild "SG_Package"
 
 SG_Package.MainGui.frame_lobbyMenu.text_kickDisabled.Font = "Gotham"
 
+SG_Package.MainGui.NarrationText.Visible = false
+
 SG_Package.MainGui.frame_lobbyMenu.button_restartHeist.buttonText.Font = "Gotham"
 SG_Package.MainGui.frame_lobbyMenu.button_restartHeist.buttonText.TextScaled = false
 SG_Package.MainGui.frame_lobbyMenu.button_restartHeist.buttonText.TextSize = 10
@@ -654,12 +656,54 @@ end)
 
 --Narration
 SG_Package.MainGui.NarrationText.ChildAdded:Connect(function(object)
-    if object.ClassName == "TextLabel" then
-        object.TextColor3 = Color3.fromRGB(255, 255, 255)
-        object.TextScaled = false
-        object.Font = "Gotham"
-        object.TextSize = 15
-    end
+
+    NarratorLabel.Text = SG_Package.MainGui.NarrationText.TextLabel.Text
+    SG_Package.MainGui.NarrationText.TextLabel.Visible = false
+    SG_Package.MainGui.NarrationText.TextLabel.TextTransparency = false
+
+    NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+                wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency - 0.1
+
+	wait(5)
+
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+	        wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+		wait()
+	NarratorLabel.TextTransparency = NarratorLabel.TextTransparency + 0.1
+
+	wait(3)
 end)
 
 --Loops
