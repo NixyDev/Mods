@@ -1,13 +1,31 @@
 game:GetService("StarterGui"):SetCore("SendNotification",{
    Title = "Less Hud";
    Text = "[Loaded] Made by Nixy";
-   Duration 3
+   Duration = 3
 })
 
 --[Disable original hud options]--
 local CurrentClient = game:GetService "Players".LocalPlayer
 local PlayerGui = CurrentClient:WaitForChild "PlayerGui"
 local SG_Package = PlayerGui:WaitForChild "SG_Package"
+
+SG_Package.MainGui.frame_lobbyMenu.text_kickDisabled.Font = "Gotham"
+
+SG_Package.MainGui.frame_lobbyMenu.button_restartHeist.buttonText.Font = "Gotham"
+SG_Package.MainGui.frame_lobbyMenu.button_restartHeist.buttonText.TextScaled = false
+SG_Package.MainGui.frame_lobbyMenu.button_restartHeist.buttonText.TextSize = 10
+
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_bagsSecured.Font = "GothamMedium"
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_bagsSecured.TextColor3 = Color3.fromRGB(255, 190, 0)
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_bagsSecured.TextScaled = false
+
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_cashSecured.Font = "GothamMedium"
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_cashSecured.TextColor3 = Color3.fromRGB(0, 255, 100)
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_cashSecured.TextScaled = false
+
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_bodyBags.Font = "GothamMedium"
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_bodyBags.TextColor3 = Color3.fromRGB(0, 150, 255)
+SG_Package.MainGui.frame_lobbyMenu.info_missionStats.text_bodyBags.TextScaled = false
 
 SG_Package.MainGui.frame_crosshairs.Visible = false
 SG_Package.MainGui.Kills.Visible = false
