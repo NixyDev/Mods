@@ -1,7 +1,0 @@
-local API = {}
-
-function API.PrintText(txt)
-   print(txt)
-end
-
-return API
